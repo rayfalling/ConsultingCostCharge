@@ -1,6 +1,8 @@
 <template>
   <div>
-
+    <mu-ripple>
+      {{ title }}
+    </mu-ripple>
   </div>
 </template>
 
@@ -9,7 +11,7 @@ export default {
   name: "MainCard",
   props: {
     title: String,
-    year: Number
+    year: Number,
   }
 }
 </script>

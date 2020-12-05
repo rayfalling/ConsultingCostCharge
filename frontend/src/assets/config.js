@@ -5,7 +5,7 @@
  *              fixed:  multiply with fixed number
  *              range:  user can switch in range with min and max
  *              rate:   default mode, multiply with number specified in
- *                      rate section and range in item rates scetion
+ *                      rate section and range in item rates section
  * */
 let config = [
     {

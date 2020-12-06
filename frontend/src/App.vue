@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <mu-appbar style="width: 100%; height: 56px;">
+    <mu-appbar style="width: 100%; height: 56px;" color="#03DAC6">
       <mu-button icon slot="left" @click="back">
         <mu-icon value=":iconfont icon-back"></mu-icon>
       </mu-button>

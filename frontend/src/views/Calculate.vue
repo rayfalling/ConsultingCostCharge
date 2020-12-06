@@ -3,7 +3,8 @@
     <mu-container fluid style="margin-top: 16px">
       <mu-flex align-items="center" justify-content="center" style="padding: 0 16px;">
         <mu-text-field v-model="value" :placeholder="config['cost']" :label="config['name']"
-                       :suffix="config['unit']" full-width @keyup="limit" @change="compute"></mu-text-field>
+                       :suffix="config['unit']" full-width @keyup="limit" type="number"
+                       @change="compute"></mu-text-field>
       </mu-flex>
       <div class="mu-input full-width" v-if="config['mode'] === 'range'" style="padding: 0 16px;">
         <div class="mu-input-label">比例</div>

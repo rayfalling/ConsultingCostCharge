@@ -1,0 +1,35 @@
+
+[ripple] .ripple--container .ripple--body {
+  opacity: 0.6 !important;
+  background-color: rgba(33, 150, 243, 0.1) !important;
+  -webkit-animation: rippler 400ms;
+          animation: rippler 400ms;
+}
+
+
+.button-card[data-v-7dcc0bf9] {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+  color: #03DAC6;
+  border: 1px solid #03DAC6;
+}
+.button-card-icon[data-v-7dcc0bf9] {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.button-card-icon img[data-v-7dcc0bf9] {
+  height: 64px;
+  width: 64px;
+  margin: 16px 48px 8px 48px;
+  color: #03DAC6;
+}
+

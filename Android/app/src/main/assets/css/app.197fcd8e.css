@@ -1,0 +1,68 @@
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.main {
+  width: 100%;
+  height: calc(100% - 56px);
+}
+.scroll {
+  overflow: auto;
+  height: 100%;
+}
+
+@font-face {
+    font-family: "iconfont";
+    src:url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAANEAAsAAAAAB1AAAAL2AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqCNIIiATYCJAMMCwgABCAFhG0HPBtuBsgusG3YE0SgwDaQLuyyDxPQjUUQjf1+9u4Q0WSS6CZNNEkiERoeRWOiFBodvpTwftrPvb8/Ezyyg7x5Qz25vJv4/cO9WqhiUbSRoFmCSBOtrEmIIuNlNutlD0FiZzPgcvz/ZVkg84BynGPoUwMsDiiwPbFNViAJegqyi9iDeZ5AvWEWwmpZTT2oFZgWiAufpwfUqZCiCNlaobpkbRHvoFCbHmS3wJv//fjPFWqSqgwXbZ+X9kPBj+z1Q5yOT2vPMzAzngPCJjJmgEKclKaOiUJgi+pV8vriakVIY0XjcXyRrqgmf3gkQVRDZSOYYCKJH1sUq6MlZ31WBtWowxlwCaxOyVpRmsj5dY29XaCLQ93aDsgaH3cF4X6vQyfU70eDdIZ0t60NaKHhqFIBqkGfSx7YcXw9c7V6MX3Z8PjY+PTU9PDQcH8/luDZmtldTelfn07FjbW9mTSauOX6d9/dQ8MtH0a3MTHRSXy0ZDowq894D3Qms0M9kxpCR3yLDMZCaDgUCoTChoZC712NDVCo4LARcu+v21rfTUfznvbMu9410/S9Nus+K0jFtjdCPpQ9gspU/s8zf+I35r7qX09NOX+1ugK+vxn2A5WpAu3KQa1Ea/F7F7dsKroU5lxUkS0ys9km9V0Z1eteFYCv3Ut/Xde9ZUKtrhhJjSFktUaIwpxBlQbzqFZrAfWmlW9u0IERRanDlAUKodURkmafyFrdEYX5jCrd3lCtNUTUO4zkPRuMhU9bzLCHYz/pHSG+vkiYWlauDapr0TMQ7GFJqc9pRCb5osRpc2Sz5RhGNsYCadDj4pwSyiIhUkZdhsFghERZxI993OblPJplt9OyN9n6IiHQWsGgHhzqR/QaQfj0iQijbndOm/t8LeQxIKgHq6HVhBshRuLrn3CycbQgylXhVrRruUYyyMOF4yiCYiJCiDLKgYIkFUFEy0f5oT6cjbdHIiqLnWlH26ps82tCz7cH6mFpjhQ5iupzDAfRpzn8YitHiQMAAAA=') format('woff2');
+}
+
+.iconfont {
+    font-family: "iconfont", sans-serif !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-category:before {
+    content: "\e691";
+}
+
+.icon-back:before {
+    content: "\e602";
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'), url(../fonts/MaterialIcons-Regular.570eb838.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+}

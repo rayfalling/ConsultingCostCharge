@@ -1,7 +1,6 @@
 package com.rayfalling.ConsultingCostCharge;
 
 import android.app.Activity;
-import android.app.Application;
 import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;

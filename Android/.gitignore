@@ -16,6 +16,7 @@ local.properties
 .idea/
 gradlew
 gradlew.bat
+gradle/
 
 app/src/main/assets/css/
 app/src/main/assets/fonts/

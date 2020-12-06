@@ -58,7 +58,7 @@ export default {
     compute() {
       let value = this.value === undefined ? 0 : this.value;
       if (this.config["unit"] === "万元")
-        value *= 1000
+        value *= 10000
       if (this.config.mode === 'range') {
         this.result = CostCalculate.calculate(this.version, this.config.index, {
           value: value,

@@ -16,3 +16,9 @@ local.properties
 .idea/
 gradlew
 gradlew.bat
+
+app/src/main/assets/css/
+app/src/main/assets/fonts/
+app/src/main/assets/js/
+app/src/main/assets/index.html
+app/src/main/assets/favicon.ico

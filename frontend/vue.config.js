@@ -8,7 +8,9 @@ module.exports = {
     // eslint-loader 是否在保存的时候检查
     lintOnSave: true,
     //放置生成的静态资源 (js、css、img、fonts) 的 (相对于 outputDir 的) 目录。
-    assetsDir: 'static',
+    assetsDir: process.env.VUE_APP_BUILD_ASSETS_PATH,
+    publicPath: process.env.VUE_APP_BUILD_PUBLIC_PATH,
+    outputDir: process.env.VUE_APP_BUILD_OUTPUT_PATH,
 
     //生产环境是否生成 sourceMap 文件，一般情况不建议打开
     productionSourceMap: false,
@@ -47,11 +49,9 @@ module.exports = {
     //调整 webpack 配置 https://cli.vuejs.org/zh/guide/webpack.html#%E7%AE%80%E5%8D%95%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F
     configureWebpack: config => {
         //生产and测试环境
-        let pluginsPro = [
-        ];
+        let pluginsPro = [];
         //开发环境
-        let pluginsDev = [
-        ];
+        let pluginsDev = [];
         // 为生产环境修改配置...process.env.NODE_ENV !== 'development'
         if (process.env.NODE_ENV === 'production') {
             config.plugins = [...config.plugins, ...pluginsPro];

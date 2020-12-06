@@ -1,10 +1,11 @@
 {
-  "name": "frontend",
-  "version": "0.1.0",
+  "name": "consulting-cost-charge",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build-web": "vue-cli-service build --mode web",
+    "build-android": "vue-cli-service build --mode android",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

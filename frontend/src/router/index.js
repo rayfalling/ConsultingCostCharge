@@ -18,7 +18,7 @@ const routes = [{
 }]
 
 const router = new VueRouter({
-    mode: 'history',
+    mode: process.env.VUE_APP_BUILD_TARGET === "android" ? "hash" : "history",
     base: process.env.BASE_URL,
     routes
 })

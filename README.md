@@ -1,1 +1,3 @@
-ConsultingCostCharge
+# 造价咨询收费计算
+
+目前配置文件为 江苏版2004和2014

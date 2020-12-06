@@ -280,6 +280,7 @@ let config = [
                 "index": 8,
                 "name": "审核标底",
                 "cost": "送审工程造价",
+                "unit": "元",
                 "mode": "range",
                 "rate": {
                     "min": {

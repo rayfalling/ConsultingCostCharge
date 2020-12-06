@@ -1,4 +1,4 @@
-# frontend
+# Consulting Cost Charge Frontend
 
 ## Project setup
 ```

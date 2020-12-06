@@ -33,12 +33,13 @@ module.exports = {
             .set('@assets', resolve('assets'))
             .set('@Pages', resolve('Pages'))
 
+        config.plugin('webpack-bundle-analyzer')
+            .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
+
         if (process.env.NODE_ENV === 'production') {
             // 为生产环境修改配置...process.env.NODE_ENV !== 'development'
-
         } else {
             // 为开发环境修改配置...
-
         }
         return config;
     },

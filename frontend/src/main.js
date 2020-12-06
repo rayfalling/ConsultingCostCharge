@@ -1,11 +1,20 @@
 import Vue from 'vue'
-import App from './App.vue'
-import MuseUI from 'muse-ui'
-import 'muse-ui/dist/muse-ui.css'
+import App from '@/App.vue'
+import router from '@/router'
+
+import VueRippler from 'vue-rippler'
+import clipboard from "clipboard";
+
+import LongPress from '@/libs/LongPress'
+import "@/libs/BabelImportMuseUI"
+
+Vue.use(VueRippler)
+Vue.use(LongPress, {time: 1000})
 
 Vue.config.productionTip = false
-Vue.use(MuseUI)
+Vue.prototype.clipboard = clipboard
 
 new Vue({
-  render: h => h(App),
+    router,
+    render: h => h(App)
 }).$mount('#app')

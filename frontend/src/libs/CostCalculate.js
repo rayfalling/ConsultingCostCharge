@@ -1,4 +1,4 @@
-import ConfigLoader from "./ConfigLoader";
+import ConfigLoader from "@/libs/ConfigLoader";
 
 /**
  * @param value         Number represent actual value
@@ -19,6 +19,7 @@ let switchRate = function (value, config) {
 
 /**
  * calculate rate mode items result
+ *
  * @param rates         Global rates with range value in config
  * @param rateConfig    Current item rate represent actual value in config
  * @param value         Number present actual value
@@ -26,7 +27,7 @@ let switchRate = function (value, config) {
  * */
 let rateMode = function (rates, rateConfig, value) {
     let sum = 0;
-    for (let index = 0; index < length(rates); index++) {
+    for (let index = 0; index < rates.length; index++) {
         let min = rates[index]["min"]
         let max = rates[index]["max"]
         if (max === "unlimited") {
@@ -45,23 +46,32 @@ let rateMode = function (rates, rateConfig, value) {
 
 /**
  * calculate range mode items result
+ *
  * @param rateConfig    Current item rate represent actual value in config
  * @param value         struct {
  *                          value: Number,
- *                          rate: Number, present in percentage
+ *                          rate: Number
+ *                          mode: percentage | thousandth
  *                      }
  * */
 let rangeMode = function (rateConfig, value) {
+    console.log(value)
     let sum = 0;
     let min = rateConfig["min"]
     let max = rateConfig["max"]
     if ("rate" in value && "value" in value) {
         if (value["rate"] > max)
-            sum = switchRate(value["value"], max);
+            sum = switchRate(value["value"], {
+                [value["mode"]]: max
+            });
         else if (value["rate"] < min)
-            sum = switchRate(value["value"], min);
+            sum = switchRate(value["value"], {
+                [value["mode"]]: min
+            });
         else {
-            sum = switchRate(value["value"], {"percentage": value["rate"]})
+            sum = switchRate(value["value"], {
+                [value["mode"]]: value["rate"]
+            })
         }
     }
     return sum
@@ -69,6 +79,7 @@ let rangeMode = function (rateConfig, value) {
 
 /**
  * calculate fixed mode items result
+ *
  * @param rateConfig    Current item rate with actual value in config
  * @param value         Number represent actual value
  * @return              calculated sum
@@ -79,6 +90,7 @@ let fixedMode = function (rateConfig, value) {
 
 /**
  * Calculate by config
+ *
  * @param rates         Global rates with range in config
  * @param rateConfig    Current item rate represent actual value in config
  * @param value         Number present actual value
@@ -99,13 +111,14 @@ let innerCalculate = function (rates, rateConfig, value) {
 
 /**
  * Calculate the value
+ *
  * @param year          year represent to index in config array
  * @param itemIndex     item index in section config array
  * @param value         value need to calculate
  * */
 let calculate = function (year, itemIndex, value) {
     let index = ConfigLoader.year2index(year)
-    let configSection = ConfigLoader.config[index]
+    let configSection = ConfigLoader.config[index - 1]
     let rates = configSection.rates
     let rateConfig = configSection.items[itemIndex - 1]
     return innerCalculate(rates, rateConfig, value)

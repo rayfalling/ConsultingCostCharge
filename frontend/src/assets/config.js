@@ -82,7 +82,7 @@ let config = [
                 "index": 2,
                 "name": "审核设计概算",
                 "cost": "概算价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -115,7 +115,7 @@ let config = [
                 "index": 3,
                 "name": "编制预算、标底(含清单编制)",
                 "cost": "建安工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -148,7 +148,7 @@ let config = [
                 "index": 4,
                 "name": "单独编制工程量清单",
                 "cost": "建安工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -181,7 +181,7 @@ let config = [
                 "index": 5,
                 "name": "编制投标报价(不含清单编制)",
                 "cost": "建安工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -214,7 +214,7 @@ let config = [
                 "index": 6,
                 "name": "编制预算、标底、投标报价(不含编制工程量清单)",
                 "cost": "建安工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -247,7 +247,7 @@ let config = [
                 "index": 7,
                 "name": "单独编制工程量清单",
                 "cost": "建安工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -280,7 +280,7 @@ let config = [
                 "index": 8,
                 "name": "审核标底",
                 "cost": "送审工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "range",
                 "rate": {
                     "min": {
@@ -295,7 +295,7 @@ let config = [
                 "index": 9,
                 "name": "工程结算编制",
                 "cost": "建安工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -328,7 +328,7 @@ let config = [
                 "index": 10,
                 "name": "工程竣工结算审核基本收费",
                 "cost": "送审项目工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -361,7 +361,7 @@ let config = [
                 "index": 11,
                 "name": "工程竣工结算审核追加费用",
                 "cost": "核减(增)额",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "fixed",
                 "rate": {
                     "percentage": 5
@@ -371,7 +371,7 @@ let config = [
                 "index": 12,
                 "name": "施工阶段全过程工程造价控制",
                 "cost": "建安工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -443,7 +443,7 @@ let config = [
                 "index": 1,
                 "name": "投资估算编制或审核",
                 "cost": "总投资",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -476,7 +476,7 @@ let config = [
                 "index": 2,
                 "name": "审核设计概算",
                 "cost": "概算价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -509,7 +509,7 @@ let config = [
                 "index": 3,
                 "name": "审核设计概算",
                 "cost": "概算价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -542,7 +542,7 @@ let config = [
                 "index": 4,
                 "name": "单独编制工程量清单",
                 "cost": "中标价或合同价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -575,7 +575,7 @@ let config = [
                 "index": 5,
                 "name": "单独审核工程量清单",
                 "cost": "中标价或合同价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -608,7 +608,7 @@ let config = [
                 "index": 6,
                 "name": "工程预算、招标控制价、投标报价(不含编制工程量清单)编制",
                 "cost": "建安工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -641,7 +641,7 @@ let config = [
                 "index": 7,
                 "name": "工程预算、招标控制价、投标报价(不含审核工程量清单)审核",
                 "cost": "送审建安工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -674,7 +674,7 @@ let config = [
                 "index": 8,
                 "name": "工程预算、招标控制价、投标报价(含工程量清单编制)编制",
                 "cost": "建安工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -707,7 +707,7 @@ let config = [
                 "index": 9,
                 "name": "工程预算、招标控制价、投标报价(含工程量清单审核)审核",
                 "cost": "送审建安工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -740,7 +740,7 @@ let config = [
                 "index": 10,
                 "name": "施工阶段全过程造价控制基本收费",
                 "cost": "送审建安工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -773,7 +773,7 @@ let config = [
                 "index": 11,
                 "name": "施工阶段全过程造价控制效益收费",
                 "cost": "过程造价核减",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "fixed",
                 "rate": {
                     "percentage": 4
@@ -783,7 +783,7 @@ let config = [
                 "index": 12,
                 "name": "施工阶段全过程造价控制驻场收费",
                 "cost": "送审建安工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -816,7 +816,7 @@ let config = [
                 "index": 13,
                 "name": "工程结算编制",
                 "cost": "建安工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -849,7 +849,7 @@ let config = [
                 "index": 14,
                 "name": "工程结算审核基本收费",
                 "cost": "送审建安工程造价",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {
@@ -882,7 +882,7 @@ let config = [
                 "index": 15,
                 "name": "工程结算审核效益收费",
                 "cost": "核增额加核减额",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "fixed",
                 "rate": {
                     "percentage": 6
@@ -892,7 +892,7 @@ let config = [
                 "index": 16,
                 "name": "工程造价司法鉴定",
                 "cost": "司法鉴定委托标的额",
-                "unit": "元",
+                "unit": "万元",
                 "mode": "rate",
                 "rate": [
                     {

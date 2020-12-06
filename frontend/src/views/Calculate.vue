@@ -56,14 +56,17 @@ export default {
       this.compute()
     },
     compute() {
+      let value = this.value === undefined ? 0 : this.value;
+      if (this.config["unit"] === "万元")
+        value *= 1000
       if (this.config.mode === 'range') {
         this.result = CostCalculate.calculate(this.version, this.config.index, {
-          value: this.value === undefined ? 0 : this.value,
+          value: value,
           mode: this.sliderConfig.mode,
           rate: this.slider
         })
       } else {
-        this.result = CostCalculate.calculate(this.version, this.config.index, this.value === undefined ? 0 : this.value)
+        this.result = CostCalculate.calculate(this.version, this.config.index, value)
       }
     },
     copy() {
